@@ -48,7 +48,7 @@ const encryptedPassword = md5Crypt('mySuperSecretPassword')
 2. Validate your plain text password with a MD5 encrypted password:\
 **The MD5 password can be either a single string or an array of strings. The plain text password will be compared to each MD5 password and the function will return true if any of them matches**
 ```ts
-const isValid = verifyMD5('mySuperSecretPassword', arrayOfSha512Passwords)
+const isValid = verifyMD5('mySuperSecretPassword', arrayOfMD5Passwords)
 // return true or false
 ```
 
