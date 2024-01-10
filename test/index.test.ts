@@ -1,17 +1,17 @@
 import { expect, it } from 'vitest'
-import { md5Crypt, verifyMD5 } from '../src/index'
+import { md5, verifyMD5 } from '../src/index'
 
 const password = 'mySuperSecretPassword'
 const encryptedPass = '{MD5}aTVgaG9NWR2N1eNABkQgYQ=='
 const anotherEncryptedPass = '{MD5}K37YiPOczJvPOxO2h1SBBw=='
 
 it('should return a string', () => {
-	const returnedPass = md5Crypt(password)
+	const returnedPass = md5(password)
 	expect(returnedPass).toBeTypeOf('string')
 })
 
 it('should return a string equals to the encrypted password', () => {
-	const returnedPass = md5Crypt(password)
+	const returnedPass = md5(password)
 	expect(returnedPass).toBe(encryptedPass)
 })
 

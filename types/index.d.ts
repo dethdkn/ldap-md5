@@ -8,11 +8,11 @@
  *
  *
  * @example
- * const encryptedPassword = md5Crypt('mySuperSecretPassword')
+ * const encryptedPassword = md5('mySuperSecretPassword')
  * // return {MD5}aTVgaG9NWR2N1eNABkQgYQ==
  *
  */
-export declare function md5Crypt(textPassword: string): string
+export declare function md5(textPassword: string): string
 
 /**
  * @function

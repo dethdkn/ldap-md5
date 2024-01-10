@@ -1,7 +1,7 @@
 {
 	"name": "ldap-md5",
 	"type": "module",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Ldap MD5 password generator for node",
 	"author": {
 		"name": "Gabriel 'DethDKN' Rosa",

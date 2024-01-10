@@ -1,7 +1,7 @@
 import { Buffer } from 'node:buffer'
 import { createHash } from 'node:crypto'
 
-export function md5(textPassword: string) {
+export default function (textPassword: string) {
 	const md5Hash = createHash('md5')
 	md5Hash.update(textPassword, 'utf-8')
 	const md5Raw = md5Hash.digest('hex')

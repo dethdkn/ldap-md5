@@ -1,7 +1,7 @@
-import { md5 } from './helpers.js'
+import _ from './helpers.js'
 
-export function md5Crypt(textPassword: string): string {
-	return md5(textPassword)
+export function md5(textPassword: string): string {
+	return _(textPassword)
 }
 
 export function verifyMD5(textPassword: string, md5Password: string | string[]): boolean {
@@ -10,7 +10,7 @@ export function verifyMD5(textPassword: string, md5Password: string | string[]):
 	for (const cryptPasswd of md5Passwords) {
 		const hashType = cryptPasswd.match(/\{([^}]+)\}/)
 		if (hashType && hashType[1] === 'MD5') {
-			const hashedPassword = md5Crypt(textPassword)
+			const hashedPassword = md5(textPassword)
 			if (hashedPassword === cryptPasswd)
 				isValid = true
 		}

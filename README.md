@@ -34,14 +34,14 @@
 
 2. Import the function into your project:
 ```ts
-import { md5Crypt, verifyMD5 } from 'ldap-md5'
+import { md5, verifyMD5 } from 'ldap-md5'
 ```
 
 ## ⚡️ Usage
 
 1. Encrypt a plain text password using md5:
 ```ts
-const encryptedPassword = md5Crypt('mySuperSecretPassword')
+const encryptedPassword = md5('mySuperSecretPassword')
 // return {MD5}aTVgaG9NWR2N1eNABkQgYQ==
 ```
 
